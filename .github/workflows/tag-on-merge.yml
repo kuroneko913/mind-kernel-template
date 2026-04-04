@@ -1,0 +1,40 @@
+name: Tag on PR merge
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    if: github.event.pull_request.merged == true   # マージされた場合だけ実行
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # タグ作成に全履歴が必要
+
+      - name: Set up Python (optional, もしスクリプトが必要なら)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Determine next version
+        id: version
+        run: |
+          # 日付と時刻でバージョンを生成 (例: v2025.12.20.2300)
+          VERSION=$(date +'%Y.%m.%d.%H%M')
+          echo "new_version=v${VERSION}" >> $GITHUB_OUTPUT
+
+      - name: Create and push tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.version.outputs.new_version }}"
+          git push origin "${{ steps.version.outputs.new_version }}"

@@ -1,0 +1,16 @@
+{
+  "id": "kernel_backlog",
+  "description": "現在進行形の課題、実験、Issue。高頻度で更新される動的な状態であり、未解決の課題や試行中のプロトコルを管理する。",
+  "body": {
+    "_guidelines": {
+      "active_issues": "現在取り組んでいる具体的な課題。各項目には 'created_at'（YYYY-MM-DD）を付与する。解決し定着した知見は patterns.json へ移管する。",
+      "experiments": "実験的な取り組みや、テスト中の新しい思考・行動パターン。",
+      "protocols": "現在運用を試行している個人的なプロトコルや習慣。",
+      "monitoring": "定点観測している指標や、精神的・身体的な状態の記録。"
+    },
+    "active_issues": {},
+    "experiments": {},
+    "protocols": {},
+    "monitoring": {}
+  }
+}

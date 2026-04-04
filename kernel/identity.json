@@ -1,0 +1,17 @@
+{
+  "id": "kernel_identity",
+  "description": "不変の『核』（OSそのものの仕様）。先天・根源的な性質や価値観（Nature）。「そもそも自分はこういう人間だ」という定義を記述する。",
+  "body": {
+    "_guidelines": {
+      "core_values": "人生や仕事において絶対に譲れない価値観や、根源的な行動原則。",
+      "strengths_and_weaknesses": "自分の長所・短所、得意・不得意なこと（認知の偏りやエネルギーの増減ポイント）。",
+      "communication_style": "自分自身の（人間社会での）コミュニケーションの癖や好み。※AIに対する指示は meta.json の system_guidelines に書くこと。"
+    },
+    "core_values": [],
+    "strengths_and_weaknesses": {
+      "strengths": [],
+      "weaknesses": []
+    },
+    "communication_style": ""
+  }
+}

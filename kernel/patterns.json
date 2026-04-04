@@ -1,0 +1,16 @@
+{
+  "id": "kernel_patterns",
+  "description": "後天的な『パターン』のライブラリ（OS上のマクロ/アプリ）。経験から獲得された、再現性のある知恵（Learn）や「こうすればうまくいく」という解決策を蓄積する。",
+  "body": {
+    "_guidelines": {
+      "mental_models": "物事を考える時の思考の型や、判断基準となるヒューリスティクス（経験則）。",
+      "workflows": "『こういう状況ではこう動く』という、すでに成功パターンとして確立された手順や行動習慣。",
+      "communication_patterns": "対人関係で気をつけている、再現性のあるコミュニケーションの型。",
+      "tool_preferences": "特定の課題を解決する際に好んで使うツールや、技術的な選択基準。"
+    },
+    "mental_models": [],
+    "workflows": {},
+    "communication_patterns": [],
+    "tool_preferences": []
+  }
+}
