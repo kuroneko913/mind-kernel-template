@@ -6,7 +6,7 @@ AIエージェントや他者が **primary_user** という人物を深く理解
 
 ## Modular Structure (v4.0.0)
 
-2025年12月より、モデルを役割と更新頻度に基づいて以下の4つのモジュールに分割し、`kernel/` ディレクトリ配下で管理しています。
+モデルを役割と更新頻度に基づいて以下の4つのモジュールに分割し、`kernel/` ディレクトリ配下で管理しています。
 
 *   [**kernel/identity.json**](./kernel/identity.json)
     *   あなたのアイデンティティと認知の基盤。プロフィール、不変の価値観、CliftonStrengthsなどの「不変の核（Nature）」。
